@@ -6,10 +6,6 @@ import "../../styles/demo.css";
 export const Demo = () => {
   const { store, actions } = useContext(Context);
 
-  useEffect(() => {
-    actions.loadSomeData();
-  }, []);
-
   const handleDelete = (contactId) => {
     actions.deleteContact(contactId);
   };
